@@ -27,7 +27,7 @@ class BatchUrlCreateView(APIView):
     def get_serializer_context(self):
         return {'request': self.request}
 
-    def post(self, request: Request, *args, **kwargs) -> HttpResponse:
+    def post(self, request: Request) -> HttpResponse:
         serializer = BatchUrlSerializer(data=request.data, context=self.get_serializer_context())
 
         if not serializer.is_valid(raise_exception=True):
