@@ -46,7 +46,7 @@ THIRD_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
-    'url_shorter.apps.url'
+    'url_shortener.apps.url'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
@@ -63,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
-ROOT_URLCONF = 'url_shorter.urls'
+ROOT_URLCONF = 'url_shortener.urls'
 
 TEMPLATES = [
     {
