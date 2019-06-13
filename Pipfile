@@ -30,6 +30,9 @@ Markdown = "==3.0.1"
 mypy_extensions = "==0.4.1"
 
 [dev-packages]
+"pep8" = "*"
+"flake8" = "*"
+"autopep8" = "*"
 
 [requires]
 python_version = "3.7"
