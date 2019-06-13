@@ -43,7 +43,8 @@ class Url(DateCreatable):
 
 
 class Visit(DateCreatable):
-    url = models.ForeignKey(Url, related_name='visits', on_delete=models.CASCADE)
+    url = models.ForeignKey(Url, related_name='visits',
+                            on_delete=models.CASCADE)
     ip_address = models.CharField(max_length=32, blank=True)
 
     class Meta:
