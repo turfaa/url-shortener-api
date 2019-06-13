@@ -5,4 +5,4 @@ from url_shortener.apps.url.models import Url
 
 @admin.register(Url)
 class UrlAdmin(admin.ModelAdmin):
-    fields = ('slug', 'long_url', 'num_visit', 'last_visit')
+    list_display = ('slug', 'long_url', 'num_visit', 'last_visit')
